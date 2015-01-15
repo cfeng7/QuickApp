@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/getAppAct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/TheListView"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+       android:headerDividersEnabled="true" android:footerDividersEnabled="true"
+          android:divider="#F0F0F0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/unselected" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_blue"    
+        android:text="Confirm" 
+        android:textColor="#FFFFFF" 
+        android:shadowColor="#000000"
+        android:shadowDx = "3"
+        android:shadowDy = "3"/>
+
+</RelativeLayout>
